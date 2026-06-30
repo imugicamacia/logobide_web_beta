@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logobide · Gabinete de Logopedia en Donostia (Illunbe)</title>
+<meta name="description" content="Gabinete de logopedia en Donostia–San Sebastián con más de 40 años de experiencia. Expertas en dislexia y lectoescritura. Evaluación e intervención del habla, el lenguaje y la deglución, en euskera y castellano.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://logobide.eus/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Logobide · Gabinete de Logopedia en Donostia">
+<meta property="og:description" content="Acompañamos a nuestros pacientes en el habla, el lenguaje, la lectoescritura y la deglución. Atención cercana en euskera y castellano.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://logobide.eus/">
+<meta name="theme-color" content="#586060">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='9' width='4' height='14' rx='1' fill='%23E0A8B0'/%3E%3Crect x='9' y='6' width='4' height='17' rx='1' fill='%23D0E0A0'/%3E%3Crect x='14' y='8' width='4' height='15' rx='1' fill='%23F0D880'/%3E%3Crect x='19' y='5' width='4' height='18' rx='1' fill='%23B0B8D8'/%3E%3Crect x='24' y='10' width='4' height='13' rx='1' fill='%23E8C0A8'/%3E%3C/svg%3E">
+<script>document.documentElement.className='js';</script>
+<style>
+  :root{
+    --rosa:#E0A8B0;--verde:#D0E0A0;--amarillo:#F0D880;--lavanda:#B0B8D8;--terracota:#E8C0A8;
+    --rosa-d:#C77E89;--verde-d:#9DB85F;--amarillo-d:#D4B547;--lavanda-d:#7E89BE;--terracota-d:#CF9670;
+    --tinta:#586060;--tinta-2:#5C6464;--tinta-3:#686E6E;
+    --hueso:#FCFBF7;--crema:#F5F3EC;--crema-2:#EFEDE3;--linea:#E4E1D6;
+    --sombra:0 22px 60px -28px rgba(88,96,96,.42);--sombra-s:0 10px 28px -18px rgba(88,96,96,.4);
+    --r:18px;--maxw:1180px;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--hueso);color:var(--tinta);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-weight:800;line-height:1.08;letter-spacing:-.02em;color:var(--tinta);text-wrap:balance}
+  p{text-wrap:pretty}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eus{font-style:italic;color:var(--tinta-2)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--lavanda-d);outline-offset:3px;border-radius:6px}
+  .logo{display:inline-flex;flex-direction:column;line-height:1;gap:5px}
+  .logo .row{display:flex;align-items:center;gap:10px}
+  .logo .map{display:flex;align-items:flex-end;gap:2px;height:30px}
+  .logo .map i{display:block;width:8px;border-radius:2px 2px 0 0}
+  .logo .map i:nth-child(1){height:22px;background:var(--terracota)}
+  .logo .map i:nth-child(2){height:28px;background:var(--amarillo)}
+  .logo .map i:nth-child(3){height:24px;background:var(--verde)}
+  .logo .map i:nth-child(4){height:30px;background:var(--lavanda)}
+  .logo .map i:nth-child(5){height:20px;background:var(--rosa)}
+  .logo .word{font-weight:300;font-size:1.5rem;letter-spacing:.02em;color:var(--tinta)}
+  .logo .word b{font-weight:800}
+  .logo-tag{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#DADEDE;font-weight:600;margin-top:6px}
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(252,251,247,.82);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid transparent;transition:border-color .4s,background .4s}
+  header.scrolled{border-bottom-color:var(--linea)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px}
+  .wrap.nav{padding-left:24px;padding-right:24px}
+  .nav .logo .word{font-size:1.3rem}
+  .nav .logo .map{height:24px}.nav .logo .map i{width:6px}
+  .nav .logo .map i:nth-child(1){height:17px}.nav .logo .map i:nth-child(2){height:23px}.nav .logo .map i:nth-child(3){height:19px}.nav .logo .map i:nth-child(4){height:24px}.nav .logo .map i:nth-child(5){height:15px}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-size:.95rem;color:var(--tinta-2);position:relative;padding:4px 0;font-weight:500;transition:color .25s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--lavanda-d);transition:width .3s}
+  .nav-links a:hover{color:var(--tinta)}.nav-links a:hover::after{width:100%}
+  .nav-cta{background:var(--tinta)!important;color:var(--hueso)!important;padding:11px 20px;border-radius:999px;font-weight:600;white-space:nowrap;transition:transform .25s,background .25s}
+  .nav-cta:hover{background:var(--lavanda-d);transform:translateY(-2px)}
+  .burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;flex-direction:column;justify-content:center;gap:5px;align-items:center}
+  .burger span{width:24px;height:2px;background:var(--tinta);transition:.3s}
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .hero-bg .wash{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55}
+  .wash.w1{width:520px;height:520px;background:var(--lavanda);top:-140px;right:6%}
+  .wash.w2{width:440px;height:440px;background:var(--verde);bottom:-160px;left:-60px}
+  .wash.w3{width:300px;height:300px;background:var(--rosa);top:30%;right:34%;opacity:.35}
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%}
+  .hero-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2);font-weight:700;margin-bottom:26px}
+  .hero-kicker .dots{display:flex;gap:4px}
+  .hero-kicker .dots i{width:9px;height:9px;border-radius:50%}
+  .hero-kicker .dots i:nth-child(1){background:var(--terracota)}.hero-kicker .dots i:nth-child(2){background:var(--amarillo)}.hero-kicker .dots i:nth-child(3){background:var(--verde)}.hero-kicker .dots i:nth-child(4){background:var(--lavanda)}.hero-kicker .dots i:nth-child(5){background:var(--rosa)}
+  .hero h1{font-size:clamp(2.7rem,6vw,4.7rem);margin-bottom:18px}
+  .hero h1 .hl{position:relative;white-space:nowrap}
+  .hero h1 .hl::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.08em;height:.28em;background:var(--amarillo);z-index:-1;border-radius:3px}
+  .hero .sub{font-size:clamp(1.05rem,2vw,1.35rem);margin-bottom:24px}
+  .hero p.lead{font-size:1.1rem;color:var(--tinta-2);max-width:34rem;margin-bottom:36px;text-wrap:pretty}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:700;font-size:1rem;cursor:pointer;border:none;transition:transform .25s,box-shadow .25s,background .25s}
+  .btn-primary{background:var(--tinta);color:var(--hueso)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 32px -14px rgba(88,96,96,.7)}
+  .btn-ghost{background:var(--hueso);color:var(--tinta);border:1.5px solid var(--linea)}
+  .btn-ghost:hover{border-color:var(--lavanda-d);transform:translateY(-3px)}
+  .hero-map{position:relative;height:440px;display:flex;align-items:center;justify-content:center;perspective:1400px}
+  .fold-map{display:flex;align-items:flex-end;gap:0;transform:rotateX(6deg) rotateY(-12deg);transform-style:preserve-3d}
+  .fold{width:74px;border-radius:10px 10px 6px 6px;box-shadow:0 18px 40px -22px rgba(88,96,96,.6);position:relative;display:flex;align-items:flex-start;justify-content:center;padding-top:16px;font-weight:800;color:rgba(88,96,96,.5);font-size:.9rem;transform-origin:bottom center}
+  /* Detalle wow 1: despliegue coreografiado al cargar (solo con JS). Parte plegado y cada fold transiciona a su ángulo propio. */
+  .js .fold{opacity:0;transform:rotateY(-80deg) translateY(12px);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+  .js .fold.in{opacity:1}
+  .js .fold:nth-child(1).in{transform:rotateY(18deg)}
+  .js .fold:nth-child(2).in{transform:rotateY(-10deg)}
+  .js .fold:nth-child(3).in{transform:rotateY(14deg)}
+  .js .fold:nth-child(4).in{transform:rotateY(-8deg)}
+  .js .fold:nth-child(5).in{transform:rotateY(16deg)}
+  .js .fold:nth-child(1){transition-delay:.12s}
+  .js .fold:nth-child(2){transition-delay:.24s}
+  .js .fold:nth-child(3){transition-delay:.36s}
+  .js .fold:nth-child(4){transition-delay:.48s}
+  .js .fold:nth-child(5){transition-delay:.6s}
+  .fold:nth-child(1){height:200px;background:var(--terracota);transform:rotateY(18deg)}
+  .fold:nth-child(2){height:248px;background:var(--amarillo);transform:rotateY(-10deg)}
+  .fold:nth-child(3){height:215px;background:var(--verde);transform:rotateY(14deg)}
+  .fold:nth-child(4){height:265px;background:var(--lavanda);transform:rotateY(-8deg)}
+  .fold:nth-child(5){height:185px;background:var(--rosa);transform:rotateY(16deg)}
+  .hero-map .pin{position:absolute;background:var(--hueso);border-radius:14px;padding:13px 17px;box-shadow:var(--sombra);display:flex;flex-direction:column;gap:2px;z-index:3}
+  .hero-map .pin .n{font-size:1.4rem;font-weight:800;color:var(--tinta);line-height:1}
+  .hero-map .pin .l{font-size:.74rem;color:var(--tinta-2)}
+  .hero-map .pin.p1{top:18px;left:2%}
+  .hero-map .pin.p2{bottom:24px;right:0}
+  .cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--tinta-3);font-size:.76rem;letter-spacing:.1em}
+  .cue .mouse{width:24px;height:38px;border:2px solid var(--tinta-3);border-radius:14px;position:relative}
+  .cue .mouse::after{content:"";position:absolute;left:50%;top:7px;transform:translateX(-50%);width:4px;height:7px;border-radius:2px;background:var(--tinta-3);animation:cue 1.6s ease-in-out infinite}
+  @keyframes cue{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,10px)}100%{opacity:0}}
+  .js .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+  .js .reveal[data-d="1"]{transition-delay:.08s}.js .reveal[data-d="2"]{transition-delay:.16s}.js .reveal[data-d="3"]{transition-delay:.24s}.js .reveal[data-d="4"]{transition-delay:.32s}
+  .section-pad{padding:120px 0}
+  .shead{max-width:44rem;margin-bottom:60px}
+  .shead .tag{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--tinta-2);margin-bottom:16px}
+  .shead .tag::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--amarillo-d)}
+  .shead h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}
+  .shead p{color:var(--tinta-2);font-size:1.1rem}
+  .fold-divider{height:26px;background:linear-gradient(135deg,transparent 49.5%,var(--linea) 49.5% 50.5%,transparent 50.5%) 0 0/52px 26px repeat-x;opacity:.5}
+  .proceso{background:linear-gradient(180deg,var(--hueso),var(--crema))}
+  .proceso-stage{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+  .proceso-sticky{position:sticky;top:130px}
+  .proceso-sticky h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
+  .proceso-sticky p{color:var(--tinta-2);font-size:1.05rem;margin-bottom:26px}
+  .progress-track{height:8px;background:var(--linea);border-radius:999px;overflow:hidden}
+  .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--terracota),var(--amarillo),var(--verde),var(--lavanda),var(--rosa));border-radius:999px;transition:width .15s linear}
+  .steps{display:flex;flex-direction:column;gap:20px}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;padding:28px 30px;background:var(--hueso);border-radius:var(--r);box-shadow:var(--sombra-s);border-left:5px solid var(--linea);transition:opacity .5s,transform .5s,box-shadow .5s,border-color .5s}
+  .js .step{opacity:.45;transform:translateX(18px)}
+  .step.active{opacity:1;transform:none;box-shadow:var(--sombra)}
+  .step .node{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;flex:none;box-shadow:var(--sombra-s)}
+  .step:nth-child(1){border-left-color:var(--rosa)}.step:nth-child(1) .node{background:var(--rosa-d)}
+  .step:nth-child(2){border-left-color:var(--verde)}.step:nth-child(2) .node{background:var(--verde-d)}
+  .step:nth-child(3){border-left-color:var(--amarillo)}.step:nth-child(3) .node{background:var(--amarillo-d)}
+  .step:nth-child(4){border-left-color:var(--lavanda)}.step:nth-child(4) .node{background:var(--lavanda-d)}
+  .step h3{font-size:1.3rem;margin-bottom:5px}
+  .step p{color:var(--tinta-2);font-size:.98rem;margin:0}
+  .grid-serv{display:grid;grid-template-columns:repeat(6,1fr);gap:26px}
+  .grid-serv .card{grid-column:span 2}
+  .grid-serv .card:nth-child(4){grid-column:2/4}
+  .grid-serv .card:nth-child(5){grid-column:4/6}
+  .card{position:relative;background:var(--hueso);border-radius:var(--r);padding:34px;box-shadow:var(--sombra-s);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s;overflow:hidden}
+  .card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px}
+  .card:hover{transform:translateY(-10px);box-shadow:var(--sombra)}
+  .card:nth-child(1)::before{background:var(--rosa)}.card:nth-child(2)::before{background:var(--verde)}.card:nth-child(3)::before{background:var(--amarillo)}.card:nth-child(4)::before{background:var(--lavanda)}.card:nth-child(5)::before{background:var(--terracota)}.card:nth-child(6)::before{background:var(--rosa)}
+  .card .ico{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .card:nth-child(1) .ico{background:rgba(224,168,176,.28)}.card:nth-child(2) .ico{background:rgba(208,224,160,.32)}.card:nth-child(3) .ico{background:rgba(240,216,128,.3)}.card:nth-child(4) .ico{background:rgba(176,184,216,.3)}.card:nth-child(5) .ico{background:rgba(232,192,168,.32)}.card:nth-child(6) .ico{background:rgba(224,168,176,.28)}
+  .card .ico svg{width:30px;height:30px;stroke:var(--tinta);fill:none;stroke-width:1.7}
+  .card h3{font-size:1.3rem;margin-bottom:10px}
+  .card p{color:var(--tinta-2);font-size:.97rem}
+  .confianza{background:var(--tinta);color:var(--hueso);position:relative;overflow:hidden}
+  .confianza .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.18}
+  .confianza .blob.c1{width:420px;height:420px;background:var(--lavanda);top:-120px;left:-80px}
+  .confianza .blob.c2{width:360px;height:360px;background:var(--rosa);bottom:-120px;right:-60px}
+  .confianza .wrap{position:relative;z-index:2}
+  .confianza .shead h2{color:var(--hueso)}.confianza .shead p{color:#cfd3d3}
+  .confianza .tag{color:#cfd3d3}.confianza .tag::before{background:var(--amarillo)}
+  .bigstat{display:flex;gap:64px;flex-wrap:wrap;margin-bottom:58px}
+  .bigstat .n{font-size:3.2rem;font-weight:800;color:var(--hueso);line-height:1}
+  .bigstat .l{color:#DADEDE;font-size:.92rem;margin-top:6px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .quote{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:30px;position:relative}
+  .quote .qico{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .quote .qico svg{width:24px;height:24px;color:var(--hueso)}
+  .quote h3{color:var(--hueso);font-size:1.18rem;margin-bottom:8px}
+  .quote p{font-size:1.02rem;line-height:1.6;color:#eef0f0}
+  .quote .who{margin-top:16px;font-size:.85rem;color:#DADEDE;font-style:normal}
+  .contacto{background:linear-gradient(180deg,var(--crema),var(--hueso))}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .contact-info h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:24px}
+  .contact-row{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--linea)}
+  .contact-row .ci{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none}
+  .contact-row:nth-child(2) .ci{background:rgba(176,184,216,.3)}.contact-row:nth-child(3) .ci{background:rgba(208,224,160,.34)}.contact-row:nth-child(4) .ci{background:rgba(240,216,128,.32)}
+  .contact-row .ci svg{width:22px;height:22px;stroke:var(--tinta);fill:none;stroke-width:1.8}
+  .contact-row .ct b{display:block;font-size:1.08rem;color:var(--tinta)}
+  .contact-row .ct span{color:var(--tinta-2);font-size:.95rem}
+  .contact-card{background:var(--hueso);border-radius:24px;padding:42px;box-shadow:var(--sombra);text-align:center;position:relative;overflow:hidden}
+  .contact-card .topband{position:absolute;top:0;left:0;right:0;height:8px;display:flex}
+  .contact-card .topband i{flex:1}
+  .contact-card .topband i:nth-child(1){background:var(--rosa)}.contact-card .topband i:nth-child(2){background:var(--verde)}.contact-card .topband i:nth-child(3){background:var(--amarillo)}.contact-card .topband i:nth-child(4){background:var(--lavanda)}.contact-card .topband i:nth-child(5){background:var(--terracota)}
+  .contact-card h3{font-size:1.6rem;margin:8px 0 10px}
+  .contact-card p{color:var(--tinta-2);margin-bottom:26px}
+  .contact-card .btn-primary{width:100%;justify-content:center;margin-bottom:12px}
+  .contact-card .btn-ghost{width:100%;justify-content:center}
+  .map-note{margin-top:20px;font-size:.84rem;color:var(--tinta-3)}
+  footer{background:var(--tinta);color:#aeb3b3;padding:54px 0 32px;text-align:center}
+  footer .logo{align-items:center;margin-bottom:10px}
+  footer .logo .word{color:var(--hueso)}
+  footer .fl{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin:20px 0;font-size:.9rem}
+  footer .fl a:hover{color:var(--hueso)}
+  footer .legal{font-size:.8rem;color:#838888;margin-top:16px}
+  @media(max-width:920px){
+    .nav-links{position:fixed;inset:80px 0 auto 0;background:var(--hueso);flex-direction:column;gap:0;padding:8px 24px 22px;border-bottom:1px solid var(--linea);transform:translateY(-140%);transition:transform .4s;height:auto}
+    .nav-links.open{transform:translateY(0)}
+    .nav-links a{padding:15px 0;width:100%;border-bottom:1px solid var(--linea)}.nav-links a::after{display:none}
+    .nav-cta{margin-top:12px;text-align:center}.burger{display:flex}
+    .hero-inner{grid-template-columns:1fr;gap:46px}.hero-map{height:330px;order:-1}
+    .proceso-stage{grid-template-columns:1fr;gap:36px}.proceso-sticky{position:relative;top:0}
+    .grid-serv{grid-template-columns:1fr 1fr}.grid-serv .card,.grid-serv .card:nth-child(4),.grid-serv .card:nth-child(5){grid-column:auto}.quotes{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr;gap:36px}.bigstat{gap:40px}
+  }
+  @media(max-width:560px){
+    .section-pad{padding:84px 0}.grid-serv{grid-template-columns:1fr}
+    .hero-actions{flex-direction:column;align-items:stretch}.btn{justify-content:center}
+    .fold{width:58px}.bigstat .n{font-size:2.6rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}*,*::after,*::before{animation:none!important;transition:none!important}
+    .js .reveal{opacity:1!important;transform:none!important}.js .step{opacity:1!important;transform:none!important}
+    .js .fold{opacity:1!important}
+    .js .fold:nth-child(1){transform:rotateY(18deg)!important}.js .fold:nth-child(2){transform:rotateY(-10deg)!important}.js .fold:nth-child(3){transform:rotateY(14deg)!important}.js .fold:nth-child(4){transform:rotateY(-8deg)!important}.js .fold:nth-child(5){transform:rotateY(16deg)!important}
+    .fold-map{transform:rotateX(6deg) rotateY(-12deg)!important}.cue{display:none}
+  }
+</style>
+</head>
+<body>
+<header id="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="logo" aria-label="Logobide, inicio">
+      <div class="row"><span class="map" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="word"><b>LOGO</b>BIDE</span></div>
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Navegación principal">
+      <a href="#proceso">El proceso</a><a href="#servicios">Servicios</a><a href="#confianza">Confianza</a><a href="#contacto">Contacto</a>
+      <a href="tel:+34943469798" class="nav-cta">943 46 97 98</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"><div class="wash w1"></div><div class="wash w2"></div><div class="wash w3"></div></div>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <span class="hero-kicker reveal"><span class="dots"><i></i><i></i><i></i><i></i><i></i></span> Gabinete de Logopedia · Donostia</span>
+      <h1 class="reveal" data-d="1">Cada palabra<br>tiene su <span class="hl">camino</span></h1>
+      <p class="sub reveal" data-d="2"><span class="eus">Hitz bakoitzak bere bidea du</span></p>
+      <p class="lead reveal" data-d="3">Evaluamos a niños, jóvenes y adultos, e intervenimos con niñes y adolescentes en el habla, el lenguaje, la lectoescritura y la deglución. Expertas en dislexia, con metodología propia y un trato a la medida de cada persona.</p>
+      <div class="hero-actions reveal" data-d="4">
+        <a href="tel:+34943469798" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Pedir cita</a>
+        <a href="#proceso" class="btn btn-ghost">Conoce el proceso</a>
+      </div>
+    </div>
+    <div class="hero-map reveal" data-d="3" aria-hidden="true">
+      <div class="fold-map"><div class="fold"></div><div class="fold"></div><div class="fold"></div><div class="fold"></div><div class="fold"></div></div>
+      <div class="pin p2"><span class="n">+40 años</span><span class="l">de experiencia</span></div>
+    </div>
+  </div>
+  <div class="cue" aria-hidden="true"><div class="mouse"></div>desliza</div>
+</section>
+<div class="fold-divider" aria-hidden="true"></div>
+<section class="proceso section-pad" id="proceso">
+  <div class="wrap proceso-stage">
+    <div class="proceso-sticky">
+      <span class="tag">El proceso</span>
+      <h2>Un camino acompañado, paso a paso</h2>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <div class="steps" id="steps">
+      <div class="step"><div class="node">1</div><div><h3>Prevenir</h3><p>Detectamos señales tempranas en el desarrollo del lenguaje y la comunicación, para actuar antes de que se conviertan en dificultad.</p></div></div>
+      <div class="step"><div class="node">2</div><div><h3>Evaluar</h3><p>Escuchamos, observamos y medimos. Una valoración cuidadosa de cada caso, con tiempo y sin prisas, es la base de todo lo demás.</p></div></div>
+      <div class="step"><div class="node">3</div><div><h3>Diagnosticar</h3><p>Ponemos nombre a lo que ocurre y lo explicamos con claridad a la familia, para que entendáis el porqué de cada paso.</p></div></div>
+      <div class="step"><div class="node">4</div><div><h3>Tratar</h3><p>Tratamiento individual y personalizado del habla, el lenguaje, la lectoescritura y la deglución, con técnicas actuales y seguimiento cercano.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="section-pad" id="servicios">
+  <div class="wrap">
+    <div class="shead reveal"><span class="tag">Qué tratamos</span><h2>Servicios de logopedia</h2><p>Evaluamos a niños, jóvenes y adultos, e intervenimos con niñes y adolescentes. Estas son las áreas en las que podemos acompañarte.</p></div>
+    <div class="grid-serv">
+      <div class="card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 1 9 9c-1.5 0-2.9-.4-4.2-1L3 21l1-4.8A8.9 8.9 0 0 1 3 12z"/></svg></div><h3>Habla</h3><p>Dificultades de articulación y pronunciación: dislalias, trastornos fonológicos y del ritmo del habla.</p></div>
+      <div class="card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg></div><h3>Lenguaje</h3><p>Retraso del lenguaje, dificultades de comprensión y expresión, y trastornos del desarrollo del lenguaje.</p></div>
+      <div class="card reveal" data-d="3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19.5V6a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM8 8h8M8 12h6"/></svg></div><h3>Lectoescritura</h3><p>Dislexia y dificultades de lectura y escritura. Acompañamos el aprendizaje de la lectura y la escritura y trabajamos de forma coordinada con la etapa escolar para reforzar el progreso.</p></div>
+      <div class="card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7H9c0-3-2-4-2-7a5 5 0 0 1 5-5zM9 18h6M10 21h4"/></svg></div><h3>Deglución</h3><p>Valoración y tratamiento de las dificultades para tragar (disfagia) en distintas edades.</p></div>
+      <div class="card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div><h3>Atención temprana</h3><p>Intervención en los primeros años, cuando el acompañamiento marca la mayor diferencia en el desarrollo.</p></div>
+    </div>
+  </div>
+</section>
+<section class="confianza section-pad" id="confianza">
+  <div class="blob c1" aria-hidden="true"></div><div class="blob c2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="shead reveal"><span class="tag">Confianza</span><h2>Por qué las familias nos eligen</h2><p>Cercanía, atención personalizada y un proceso cuidado a cada edad. Estos son los pilares de nuestro trabajo.</p></div>
+    <div class="bigstat reveal" data-d="1">
+      <div><div class="n">+40 años</div><div class="l">De experiencia en el gabinete</div></div>
+      <div><div class="n">eu · es</div><div class="l">Atención en euskera y castellano</div></div>
+      <div><div class="n">Dislexia</div><div class="l">Expertas en lectoescritura y dislexia</div></div>
+    </div>
+    <div class="quotes">
+      <div class="quote reveal" data-d="1"><div class="qico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div><h3>Expertas en dislexia</h3><p>Especializadas en lectoescritura y dislexia, con una mirada experta a las dificultades de lectura y escritura.</p></div>
+      <div class="quote reveal" data-d="2"><div class="qico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Metodología propia</h3><p>Un método propio, desarrollado con los años, con un proceso claro de evaluación, diagnóstico e intervención.</p></div>
+      <div class="quote reveal" data-d="3"><div class="qico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Más de 40 años de experiencia</h3><p>Más de cuatro décadas acompañando a pacientes de Donostia en el habla, el lenguaje y la lectoescritura.</p></div>
+    </div>
+  </div>
+</section>
+<section class="contacto section-pad" id="contacto">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="tag" style="display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--tinta-2);margin-bottom:16px">Contacto</span>
+      <h2>Demos el primer paso juntos</h2>
+      <div class="contact-row"><div class="ci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="ct"><b>943 46 97 98</b><span>Llámanos para pedir cita</span></div></div>
+      <div class="contact-row"><div class="ci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="ct"><b>Calle Illunbe 13, bajo</b><span>20011 Donostia · San Sebastián</span></div></div>
+      <div class="contact-row"><div class="ci"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v5"/></svg></div><div class="ct"><b>logopeda@sagrarioizaskun.com</b><span>Escríbenos tu consulta</span></div></div>
+    </div>
+    <div class="contact-card reveal" data-d="1">
+      <div class="topband" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <h3>Pide tu primera cita</h3>
+      <p>Cuéntanos qué necesitas y te orientamos sin compromiso. El primer paso suele ser el más importante.</p>
+      <a href="tel:+34943469798" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Llamar al 943 46 97 98</a>
+      <a href="mailto:logopeda@sagrarioizaskun.com" class="btn btn-ghost">Enviar un correo</a>
+      <div class="map-note">Atención presencial · euskera y castellano</div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="logo"><div class="row" style="justify-content:center"><span class="map" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="word"><b>LOGO</b>BIDE</span></div><div class="logo-tag">Gabinete de Logopedia · Logopedia Gabinetea</div></div>
+    <p>Gabinete de Logopedia · Sagrario Izaskun</p>
+    <div class="fl"><a href="#proceso">El proceso</a><a href="#servicios">Servicios</a><a href="#confianza">Confianza</a><a href="#contacto">Contacto</a></div>
+    <p class="legal">Calle Illunbe 13, bajo · 20011 Donostia–San Sebastián · 943 46 97 98</p>
+    <p class="legal" style="margin-top:8px"><span style="display:inline-block;border:1px solid #8a9090;border-radius:999px;padding:5px 14px;color:#DADEDE;letter-spacing:.04em">Centro acreditado CLPV · Euskal Herriko Logopeden Elkargoa</span></p>
+  </div>
+</footer>
+<script>
+  var header=document.getElementById('header');
+  var onScroll=function(){header.classList.toggle('scrolled',window.scrollY>20);};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var burger=document.getElementById('burger'),navlinks=document.getElementById('navlinks');
+  burger.addEventListener('click',function(){var o=navlinks.classList.toggle('open');burger.setAttribute('aria-expanded',o?'true':'false');});
+  navlinks.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){navlinks.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
+  var revs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16});
+    revs.forEach(function(el){io.observe(el);});
+  }else{revs.forEach(function(el){el.classList.add('in');});}
+  var proceso=document.getElementById('proceso'),steps=[].slice.call(document.querySelectorAll('#steps .step')),fill=document.getElementById('progressFill'),ticking=false;
+  function update(){
+    var rect=proceso.getBoundingClientRect(),vh=window.innerHeight;
+    var total=rect.height - vh*0.4, scrolled=Math.min(Math.max(vh*0.6 - rect.top,0),total),p=total>0?scrolled/total:0;
+    fill.style.width=(p*100).toFixed(1)+'%';
+    var active=Math.max(Math.round(p*steps.length),p>0?1:0);
+    steps.forEach(function(s,i){s.classList.toggle('active',i<active);});
+    ticking=false;
+  }
+  function req(){if(!ticking){requestAnimationFrame(update);ticking=true;}}
+  window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);update();
+  if(steps[0])steps[0].classList.add('active');
+
+  // ---- Detalle wow: despliegue del mapa + parallax al puntero ----
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var folds = [].slice.call(document.querySelectorAll('.fold'));
+  var foldMap = document.querySelector('.fold-map');
+  // 1) Despliegue coreografiado al cargar
+  if(reduce){
+    folds.forEach(function(f){f.classList.add('in');});
+  }else{
+    requestAnimationFrame(function(){requestAnimationFrame(function(){
+      folds.forEach(function(f){f.classList.add('in');});
+    });});
+  }
+  // 2) Parallax sutil del mapa siguiendo el puntero (solo dispositivos con puntero fino y sin reduced-motion)
+  var finePointer = window.matchMedia && window.matchMedia('(pointer:fine)').matches;
+  if(foldMap && finePointer && !reduce){
+    var heroMap = document.querySelector('.hero-map');
+    var pTick=false, px=0, py=0;
+    heroMap.addEventListener('mousemove',function(e){
+      var r=heroMap.getBoundingClientRect();
+      px=((e.clientX-r.left)/r.width-0.5);   // -0.5..0.5
+      py=((e.clientY-r.top)/r.height-0.5);
+      if(!pTick){requestAnimationFrame(applyTilt);pTick=true;}
+    });
+    heroMap.addEventListener('mouseleave',function(){px=0;py=0;if(!pTick){requestAnimationFrame(applyTilt);pTick=true;}});
+    function applyTilt(){
+      // pocos grados: base rotateX(6) rotateY(-12) + desviación leve
+      var ry=-12 + px*7, rx=6 - py*5;
+      foldMap.style.transform='rotateX('+rx.toFixed(2)+'deg) rotateY('+ry.toFixed(2)+'deg)';
+      pTick=false;
+    }
+  }
+</script>
+</body>
+</html>
