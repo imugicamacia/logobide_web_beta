@@ -45,7 +45,7 @@
   .logo .word{font-weight:300;font-size:1.5rem;letter-spacing:.02em;color:var(--tinta)}
   .logo .word b{font-weight:800}
   .logo-tag{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#DADEDE;font-weight:600;margin-top:6px}
-  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(252,251,247,.82);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid transparent;transition:border-color .4s,background .4s}
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(252,251,247,.82);-webkit-backdrop-filter:saturate(140%) blur(12px);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid transparent;transition:border-color .4s,background .4s}
   header.scrolled{border-bottom-color:var(--linea)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px}
   .wrap.nav{padding-left:24px;padding-right:24px}
@@ -56,26 +56,26 @@
   .nav-links a{font-size:.95rem;color:var(--tinta-2);position:relative;padding:4px 0;font-weight:500;transition:color .25s}
   .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--lavanda-d);transition:width .3s}
   .nav-links a:hover{color:var(--tinta)}.nav-links a:hover::after{width:100%}
-  .nav-cta{background:var(--tinta)!important;color:var(--hueso)!important;padding:11px 20px;border-radius:999px;font-weight:600;white-space:nowrap;transition:transform .25s,background .25s}
-  .nav-cta:hover{background:var(--lavanda-d);transform:translateY(-2px)}
+  a.nav-cta{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--tinta)!important;color:var(--hueso)!important;padding:14px 32px!important;border-radius:999px;font-weight:600;white-space:nowrap;transition:transform .25s,background .25s}
+  a.nav-cta:hover{background:var(--lavanda-d);transform:translateY(-2px)}
   .burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;flex-direction:column;justify-content:center;gap:5px;align-items:center}
   .burger span{width:24px;height:2px;background:var(--tinta);transition:.3s}
-  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden}
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden}
   .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
   .hero-bg .wash{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55}
   .wash.w1{width:520px;height:520px;background:var(--lavanda);top:-140px;right:6%}
   .wash.w2{width:440px;height:440px;background:var(--verde);bottom:-160px;left:-60px}
   .wash.w3{width:300px;height:300px;background:var(--rosa);top:30%;right:34%;opacity:.35}
   .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%}
-  .hero-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2);font-weight:700;margin-bottom:26px}
-  .hero-kicker .dots{display:flex;gap:4px}
-  .hero-kicker .dots i{width:9px;height:9px;border-radius:50%}
+  .hero-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px}
+  .hero-kicker .dots{display:flex;gap:5px}
+  .hero-kicker .dots i{width:11px;height:11px;border-radius:50%}
   .hero-kicker .dots i:nth-child(1){background:var(--terracota)}.hero-kicker .dots i:nth-child(2){background:var(--amarillo)}.hero-kicker .dots i:nth-child(3){background:var(--verde)}.hero-kicker .dots i:nth-child(4){background:var(--lavanda)}.hero-kicker .dots i:nth-child(5){background:var(--rosa)}
-  .hero h1{font-size:clamp(2.7rem,6vw,4.7rem);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.18;margin-bottom:20px;text-wrap:pretty}
   .hero h1 .hl{position:relative;white-space:nowrap}
   .hero h1 .hl::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.08em;height:.28em;background:var(--amarillo);z-index:-1;border-radius:3px}
   .hero .sub{font-size:clamp(1.05rem,2vw,1.35rem);margin-bottom:24px}
-  .hero p.lead{font-size:1.1rem;color:var(--tinta-2);max-width:34rem;margin-bottom:36px;text-wrap:pretty}
+  .hero p.lead{font-size:clamp(1.15rem,2.2vw,1.45rem);color:var(--tinta-2);max-width:38rem;margin-bottom:36px;text-wrap:pretty}
   .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
   .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:700;font-size:1rem;cursor:pointer;border:none;transition:transform .25s,box-shadow .25s,background .25s}
   .btn-primary{background:var(--tinta);color:var(--hueso)}
@@ -153,23 +153,32 @@
   .card .ico svg{width:30px;height:30px;stroke:var(--tinta);fill:none;stroke-width:1.7}
   .card h3{font-size:1.3rem;margin-bottom:10px}
   .card p{color:var(--tinta-2);font-size:.97rem}
-  .confianza{background:var(--tinta);color:var(--hueso);position:relative;overflow:hidden}
-  .confianza .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.18}
+  .confianza{background:linear-gradient(180deg,var(--crema),var(--hueso));position:relative;overflow:hidden}
+  .confianza .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.45}
   .confianza .blob.c1{width:420px;height:420px;background:var(--lavanda);top:-120px;left:-80px}
   .confianza .blob.c2{width:360px;height:360px;background:var(--rosa);bottom:-120px;right:-60px}
   .confianza .wrap{position:relative;z-index:2}
-  .confianza .shead h2{color:var(--hueso)}.confianza .shead p{color:#cfd3d3}
-  .confianza .tag{color:#cfd3d3}.confianza .tag::before{background:var(--amarillo)}
   .bigstat{display:flex;gap:64px;flex-wrap:wrap;margin-bottom:58px}
-  .bigstat .n{font-size:3.2rem;font-weight:800;color:var(--hueso);line-height:1}
-  .bigstat .l{color:#DADEDE;font-size:.92rem;margin-top:6px}
+  .bigstat .n{font-size:3.2rem;font-weight:800;line-height:1}
+  .bigstat .l{color:var(--tinta-2);font-size:.92rem;margin-top:6px}
+  .bigstat>div:nth-child(1) .n{color:var(--terracota-d)}
+  .bigstat>div:nth-child(2) .n{color:var(--verde-d)}
+  .bigstat>div:nth-child(3) .n{color:var(--rosa-d)}
   .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .quote{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:30px;position:relative}
-  .quote .qico{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-  .quote .qico svg{width:24px;height:24px;color:var(--hueso)}
-  .quote h3{color:var(--hueso);font-size:1.18rem;margin-bottom:8px}
-  .quote p{font-size:1.02rem;line-height:1.6;color:#eef0f0}
-  .quote .who{margin-top:16px;font-size:.85rem;color:#DADEDE;font-style:normal}
+  .quote{background:var(--hueso);border:1px solid var(--linea);border-radius:var(--r);padding:30px;position:relative;box-shadow:var(--sombra-s);overflow:hidden;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+  .quote:hover{transform:translateY(-8px);box-shadow:var(--sombra)}
+  .quote::before{content:"";position:absolute;top:0;left:0;right:0;height:6px}
+  .quote:nth-child(1)::before{background:var(--rosa)}
+  .quote:nth-child(2)::before{background:var(--verde)}
+  .quote:nth-child(3)::before{background:var(--lavanda)}
+  .quote .qico{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .quote:nth-child(1) .qico{background:rgba(224,168,176,.28)}
+  .quote:nth-child(2) .qico{background:rgba(208,224,160,.32)}
+  .quote:nth-child(3) .qico{background:rgba(176,184,216,.3)}
+  .quote .qico svg{width:24px;height:24px;stroke:var(--tinta);fill:none;stroke-width:1.7}
+  .quote h3{color:var(--tinta);font-size:1.18rem;margin-bottom:8px}
+  .quote p{font-size:1.02rem;line-height:1.6;color:var(--tinta-2)}
+  .quote .who{margin-top:16px;font-size:.85rem;color:var(--tinta-3);font-style:normal}
   .contacto{background:linear-gradient(180deg,var(--crema),var(--hueso))}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
   .contact-info h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:24px}
@@ -235,11 +244,10 @@
   <div class="hero-bg" aria-hidden="true"><div class="wash w1"></div><div class="wash w2"></div><div class="wash w3"></div></div>
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <span class="hero-kicker reveal"><span class="dots"><i></i><i></i><i></i><i></i><i></i></span> Gabinete de Logopedia · Donostia</span>
-      <h1 class="reveal" data-d="1">Cada palabra<br>tiene su <span class="hl">camino</span></h1>
-      <p class="sub reveal" data-d="2"><span class="eus">Hitz bakoitzak bere bidea du</span></p>
-      <p class="lead reveal" data-d="3">Evaluamos a niños, jóvenes y adultos, e intervenimos con niñes y adolescentes en el habla, el lenguaje, la lectoescritura y la deglución. Expertas en dislexia, con metodología propia y un trato a la medida de cada persona.</p>
-      <div class="hero-actions reveal" data-d="4">
+      <span class="hero-kicker reveal"><span class="dots"><i></i><i></i><i></i><i></i><i></i></span></span>
+      <h1 class="reveal" data-d="1">Gabinete de Logopedia · <span class="hl">Donostia</span></h1>
+      <p class="lead reveal" data-d="2">Evaluamos a niños, jóvenes y adultos, e intervenimos con niños y adolescentes en el habla, el lenguaje, la lectoescritura y la deglución. Expertas en dislexia, con metodología propia y un trato a la medida de cada persona.</p>
+      <div class="hero-actions reveal" data-d="3">
         <a href="tel:+34943469798" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Pedir cita</a>
         <a href="#proceso" class="btn btn-ghost">Conoce el proceso</a>
       </div>
@@ -269,13 +277,13 @@
 </section>
 <section class="section-pad" id="servicios">
   <div class="wrap">
-    <div class="shead reveal"><span class="tag">Qué tratamos</span><h2>Servicios de logopedia</h2><p>Evaluamos a niños, jóvenes y adultos, e intervenimos con niñes y adolescentes. Estas son las áreas en las que podemos acompañarte.</p></div>
+    <div class="shead reveal"><span class="tag">Qué tratamos</span><h2>Servicios de logopedia</h2><p>Evaluamos a niños, jóvenes y adultos, e intervenimos con niños y adolescentes. Estas son las áreas en las que podemos acompañarte.</p></div>
     <div class="grid-serv">
       <div class="card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 1 9 9c-1.5 0-2.9-.4-4.2-1L3 21l1-4.8A8.9 8.9 0 0 1 3 12z"/></svg></div><h3>Habla</h3><p>Dificultades de articulación y pronunciación: dislalias, trastornos fonológicos y del ritmo del habla.</p></div>
       <div class="card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg></div><h3>Lenguaje</h3><p>Retraso del lenguaje, dificultades de comprensión y expresión, y trastornos del desarrollo del lenguaje.</p></div>
-      <div class="card reveal" data-d="3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19.5V6a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM8 8h8M8 12h6"/></svg></div><h3>Lectoescritura</h3><p>Dislexia y dificultades de lectura y escritura. Acompañamos el aprendizaje de la lectura y la escritura y trabajamos de forma coordinada con la etapa escolar para reforzar el progreso.</p></div>
+      <div class="card reveal" data-d="3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19.5V6a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM8 8h8M8 12h6"/></svg></div><h3>Lectoescritura – Dislexia</h3><p>Dislexia y dificultades de lectura y escritura. Acompañamos el aprendizaje de la lectura y la escritura y trabajamos de forma coordinada con la etapa escolar para reforzar el progreso.</p></div>
       <div class="card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7H9c0-3-2-4-2-7a5 5 0 0 1 5-5zM9 18h6M10 21h4"/></svg></div><h3>Deglución</h3><p>Valoración y tratamiento de las dificultades para tragar (disfagia) en distintas edades.</p></div>
-      <div class="card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div><h3>Atención temprana</h3><p>Intervención en los primeros años, cuando el acompañamiento marca la mayor diferencia en el desarrollo.</p></div>
+      <div class="card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.3 9.2a2.7 2.7 0 0 1 5.2 1c0 1.8-2.5 2-2.5 3.8"/><path d="M12 17.3h.01"/></svg></div><h3>Otros servicios</h3><p>Depende del caso: valoramos cada situación de forma individual y te proponemos el acompañamiento más adecuado.</p></div>
     </div>
   </div>
 </section>
@@ -307,7 +315,7 @@
     <div class="contact-card reveal" data-d="1">
       <div class="topband" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
       <h3>Pide tu primera cita</h3>
-      <p>Cuéntanos qué necesitas y te orientamos sin compromiso. El primer paso suele ser el más importante.</p>
+      <p>Cuéntanos qué necesitas y te orientamos sin compromiso.</p>
       <a href="tel:+34943469798" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Llamar al 943 46 97 98</a>
       <a href="mailto:logopeda@sagrarioizaskun.com" class="btn btn-ghost">Enviar un correo</a>
       <div class="map-note">Atención presencial · euskera y castellano</div>
