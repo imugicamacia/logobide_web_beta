@@ -493,9 +493,6 @@
       var stored = localStorage.getItem('logobide_lang');
       if(stored==='es'||stored==='eu') return stored;
     }catch(e){}
-    var host = location.hostname || '';
-    if(host.indexOf('.eus')!==-1) return 'eu';
-    if(host.indexOf('.es')!==-1) return 'es';
     return 'es';
   }
 
